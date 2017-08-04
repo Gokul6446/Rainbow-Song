@@ -2,22 +2,25 @@
 <html ng-app="myapp">
 <head>
 	<title>My Git Project</title>
-	<script src="angular.min.js"></script>
+	 <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 	<script src= "controller1.js"></script>
 </head>
 <body> 
 <div ng-controller="firstctrl">
-
-  {{name1}}
+    {{name1}}
   {{name2}}
-{{names}}	
+<span style ="color:red" ng-show= "names== undefined">	
+	names is undefined
+	</span
 </div>
 <br/>
 <div ng-controller="secondctrl">
-
-  {{name1}}
-  {{name2}}
+<span style ="color:red" ng-show= "name1== undefined">	
+	name1 is undefined
+	</span>
+{{name2}}
 {{names}}	
+
 </div>
 
  </body>
